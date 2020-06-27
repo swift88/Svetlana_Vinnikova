@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINKS</title>
+    <style>
+        html,
+        body {
+            margin-top: 10px;
+        }
+
+        a {
+            color: green;
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        div.Link1 a:not(:last-child) {
+            border-right: 5px solid rgb(241, 13, 13);
+            padding: 8px 15px;
+        }
+
+        div.Link1 a:last-child {
+            margin-left: 15px;
+        }
+
+        ul.Link2 {
+            margin-left: -42px;
+        }
+
+        ul.Link2 li {
+            display: inline-block;
+            border-right: 5px solid rgb(241, 13, 13);
+            padding: 8px 15px;
+        }
+
+        ul.Link2 li:last-child {
+            border: none;
+        }
+
+        table.Link3 td:nth-child(odd) {
+            padding-left: 10px;
+        }
+
+        .Link3 {
+            width: 880px;
+        }
+
+        .Link4 a {
+            float: left;
+            margin-left: 9px;
+        }
+
+        div.Link4 a::after {
+            content: "|";
+            padding: 0px 14px;
+            color: red;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!--Ссылки расположены в строку, т.к. тег <a> является строчным элементом.
+         Т.о. ширина строчных элементов равна их содержимому плюс значения отступов, полей и границ. 
+         Красный разделитель получен из видимой правой стороны рамки. 
+         Минус такого способа- дополнительно нужно устанавливать отступ для левой стороны последней ссылки.-->
+    <div class="Link1">
+        <a href="http://htmlbook.ru/">первая ссылка</a>
+        <a href="http://htmlbook.ru/">вторая ссылка</a>
+        <a href="http://htmlbook.ru/">третья ссылка</a>
+        <a href="http://htmlbook.ru/">четвертая ссылка</a>
+        <a href="http://htmlbook.ru/">пятая ссылка</a>
+    </div>
+    <br>
+
+    <!--Ссылки расположены в строку, т.к. тегу <li> задан display: inline-block. Можно также задать display: inline.
+    Красный разделитель получен из видимой правой стороны рамки.
+    Минус такого способа-нужно подбирать отступы для одинакового восприятия с предыдущим див-контейнером.
+    Если не добиваться одинакового визуального результата, то способ также хороший. -->
+    <ul class="Link2">
+        <li><a href="http://htmlbook.ru/">первая ссылка</a></li>
+        <li><a href="http://htmlbook.ru/">вторая ссылка</a></li>
+        <li><a href="http://htmlbook.ru/">третья ссылка</a></li>
+        <li><a href="http://htmlbook.ru/">четвертая ссылка</a></li>
+        <li><a href="http://htmlbook.ru/">пятая ссылка</a></li>
+    </ul>
+    <br>
+
+    <!--Ссылки расположены в строку, т.к. используется таблица с одной строкой.
+    Красный разделитель получен из картинки, расположенной в отдельной ячейке этой же строки.
+    Способ простой и быстрый. 
+    Ширина width: 880px задана только с целью одинакового визуального восприятия с предыдущими способами.
+ -->
+    <table class="Link3">
+        <tr>
+            <td><a href="http://htmlbook.ru/">первая ссылка</a></td>
+            <td><img src='links.png'></td>
+            <td><a href="http://htmlbook.ru/">вторая ссылка </a></td>
+            <td><img src='links.png'></td>
+            <td><a href="http://htmlbook.ru/">третья ссылка</a></td>
+            <td><img src='links.png'></td>
+            <td><a href="http://htmlbook.ru/">четвертая ссылка</a></td>
+            <td><img src='links.png'></td>
+            <td><a href="http://htmlbook.ru/">пятая ссылка</a></td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <!--Ссылки расположены в строку, т.к. применено свойство float: left. 
+        Разделитель добавлен с помощью псевдоэлемента ::after. 
+       Способ тяжелее предыдущих.Не знаю, как убрать разделитель с последней ссылки.  -->
+    <div class="Link4">
+        <div><a href="http://htmlbook.ru/">первая ссылка</a></div>
+        <div><a href="http://htmlbook.ru/">вторая ссылка</a></div>
+        <div><a href="http://htmlbook.ru/">третья ссылка</a></div>
+        <div> <a href="http://htmlbook.ru/">четвертая ссылка</a></div>
+        <div><a href="http://htmlbook.ru/">пятая ссылка</a></div>
+    </div>
+
+
+
+</body>
+
+</html>

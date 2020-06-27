@@ -4,52 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stars</title>
+    <title>Document</title>
     <style>
-        .Stars ul,
-        .Stars li {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
+        .common {
+            width: 500px;
         }
 
-        .Stars li {
-            display: inline-block;
+        div.star {
 
-        }
-
-        .Stars li:hover {
-            background-image: url('starr.png');
+            background: url(6d/s_s.png) no-repeat;
+            background-position: -104px 0px;
+            width: 100px;
+            height: 100px;
+            float: right;
 
         }
 
-        p:hover {
-            background-image: url('starr.png');
-
+        div.star:hover,
+        div.star:hover~div {
+            background-position: 0 0;
         }
     </style>
-
-
 
 </head>
 
 <body>
-    <div class="Stars">
-        <ul>
-            <li><span class="A"><img src='starrr.png' alt="star"> </span></li>
-            <li><span class="A"><img src='starrr.png' alt="star"> </span></li>
-            <li><span class="A"><img src='starrr.png' alt="star"> </span></li>
-            <li><span class="A"><img src='starrr.png' alt="star"> </span></li>
-            <li><span class="A"><img src='starrr.png' alt="star"> </span></li>
-        </ul>
+    <div class="common">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
     </div>
-
-    <p><img src='starrr.png' alt="star"><img src='starrr.png' alt="star"></p>
-
-
-
-
-
 </body>
 
 </html>
