@@ -8,6 +8,7 @@ body{
     overflow-x: hidden;
     font-size: 16px;
     font-family: 'PFDinTextCompPro-Regular', sans-serif; 
+height: 2000px;
 }
 
 a{
@@ -19,6 +20,9 @@ h2{
     color:#5B5B5B;
     font-size:30px;
     text-align: center;
+}
+li{
+    list-style-type: none;
 }
 .wrapper{
     background-color:#2F3032;
@@ -221,6 +225,94 @@ background: url('../img/item1.jpeg') no-repeat center;
     display: inline-block;
 }
 
+.left-to-right .catalog1-right{
+    float: left;
+}
+.left-to-right .catalog1-left{
+    float: right;
+}
+
+.left-to-right .catalog1-left{
+     background: url('../img/item8.jpeg') no-repeat center;
+}
+
+.left-to-right .catalog1-right > div:first-child{
+     background: url('../img/item6.jpeg') no-repeat center;
+ }
+ .left-to-right .catalog1-right > div:last-child{
+     background: url('../img/item7.jpeg') no-repeat center;
+ }
+
+.left-to-right {
+    margin-bottom: 60px;
+}
+
+/* recipies */
+.recipies{
+
+}
+
+.recipe{
+    width: 544px;
+    height: 268px;
+    border: 2px solid #F2F2F2;
+}
+.recipe-img{
+    width: 267px;
+    height: 268px;
+    float: left;
+}
+.recipe-img1{
+    background: url('../img/recipe1.jpeg') no-repeat center;
+}
+.recipe-img .author{
+    margin-top: 227px;
+    margin-left: 14px;
+}
+.recipe-img .author img{
+    border-radius: 50%;
+    float: left;
+}
+.recipe-img .author p{
+    padding-top: 6px;
+    margin-left: 42px;
+    color:#BCBCBC;
+}
+.recipe-content{
+  margin-left: 267px;
+
+}
+.recipe-content h3{
+    color:#3D3D3D;
+    font-size:24px;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 24px;
+}
+.recipe-content ul{
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+.recipe-content ul li{
+    height: 29px;
+    display: inline-block;
+    border: 1px solid #E8E8E8;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 20px;
+    padding-top: 5px;
+    color:#B5904E;
+    font-size:12px;
+}
+.recipe-content ul li span{
+    vertical-align: 5px;
+    margin-left: 5px;
+}
+.recipe-content h3 + div{
+    padding-left: 12px;
+    padding-right: 12px;
+}
 
 
 
