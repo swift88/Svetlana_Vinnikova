@@ -385,6 +385,7 @@ margin-bottom: 50px;
     height: 427px;
     float: left;
     margin-left: 7px;
+   
 }
 .hot_selection ul li:nth-child(1){
   background: url('../img/hot_selection1.jpeg') no-repeat center;
@@ -403,6 +404,13 @@ margin-bottom: 50px;
     color:#F0F0F0;
     font-size:26px;
     margin-top: 324px;
+}
+.hot_selection ul li:nth-child(2) p{
+    margin-top: 355px;
+}
+
+.hot_selection ul li:nth-child(3) p{
+    margin-top: 292px;
 }
 .hot_selection + h2{
     margin-top: 50px;
