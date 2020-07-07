@@ -1,0 +1,74 @@
+@media all and (max-width:1360px){
+.container{
+    width: 769px;
+}
+.catalog div h3{
+    font-size: 30px;
+}
+.catalog div{
+    width: 379px;
+}
+.catalog1 > div {
+    width: 100%;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.catalog1-right > div{
+    width: 379px;
+}
+.catalog1-right > div:first-child,
+.catalog1-right > div:last-child,
+.left-to-right .catalog1-left,
+.left-to-right .catalog1-right > div:first-child,
+.left-to-right .catalog1-right > div:last-child{
+    background-size: cover;
+}
+.catalog1 .catalog1-right{
+    margin-bottom: 0;
+}
+.recipe{
+    width: 100%;
+}
+.recipe:nth-child(even) {
+    margin-left: 0px;
+}
+.content-wrap .hot_selection ul li{
+    width:379px;
+    background-size: cover;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+.content-wrap .hot_selection ul li:nth-child(even){
+    float: right;
+}
+.content-wrap .hot_selection ul li:nth-child(odd){
+    float: left;
+}
+.top_autors{
+    width: 470px;
+}
+.top_autors div{
+    margin-bottom: 10px;
+}
+}
+@media all and (max-width:992px){
+    .container{
+        width: 569px;
+    }
+    .catalog div{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .catalog div:first-child,
+    .catalog div:last-child{
+        background-size: cover;
+        float: none;
+    }
+    /*.catalog1-left{
+        float: none;
+    }*/
+    .catalog1-right > div{
+        width: 100%;
+    }
+    
+}
