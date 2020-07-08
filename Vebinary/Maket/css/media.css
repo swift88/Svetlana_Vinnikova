@@ -70,5 +70,84 @@
     .catalog1-right > div{
         width: 100%;
     }
-    
+    .catalog1 > div:last-child{
+        height: auto;
+    }
+    .catalog1 > div > div{
+        height: 267px;
+    }
+    .catalog1-right > div:first-child{
+       margin-bottom: 10px;
+    }
+    .content-wrap .hot_selection ul li{
+        width: 100%;
+    }
+    .hot_selection ul li p {
+        margin-top: 184px;
+        font-size: 56px;
+    }
 }
+@media all and (max-width:785px){
+    .sideMenu {
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+    .content-wrap{
+        margin-left: 0;
+    }
+    .menu {
+        margin-bottom: 86px;
+    }
+    .container{
+        width: 300px;
+    }
+    .catalog {
+        padding-top: 12px;
+    }
+    .recipies {
+        margin-top: 16px;
+    }
+    .recipe{
+        height: auto;
+    }
+    .recipe-img{
+        float: none;
+        width: 100%;
+    }
+    .recipe-content {
+        margin-left: 0;
+    }
+    .recipe-img .author{
+        margin-top: 20px;
+    }
+    .top_autors{
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    .subscribe {
+        height: auto;
+    }
+    .footer .container {
+        padding-top: 4px;
+    }
+    .footer-social,
+    .footer-nav {
+        float: none;
+    }
+    .footer-social{
+        margin-top: 3px;
+        margin-left: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

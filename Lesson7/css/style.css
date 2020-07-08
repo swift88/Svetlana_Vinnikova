@@ -1,56 +1,60 @@
-*/*{
-    padding: 0;
+* {
     margin: 0;
-    box-sizing: border-box; 
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    overflow-x: hidden;
-    font-size: 16px;
+h2 {
+    color: #0000ff;
+    padding-top: 15px;
 }
-*/
-.clearfix:after{
+
+.clearfix:after {
     content: "";
     display: block;
     clear: both;
 }
-.wrapper{
-     margin: 0 auto;
-     min-height: 100%;
-}
-.header,
-.footer{
-    border: 1px solid rgb(156, 95, 95);
-    text-align: center;
-    background-color: #add8e6;
-}
-.h2{
-    color: #0000ff;
-}
-.menu{
-    float: left;
-    width: 215px;
-    
-}
-.menu p{
-    font-weight: bold;
-}
-.menu_wrap{
-    background: url(../img/boll.jpeg) repeat-y right top;
-}
-.content{
-    width: 800px;
-    float: right;
-}
-.content p:first-child{
-    text-align: center;
-    font-weight: bold;
-}
-.content img{
-    width: 250px;
-    height: 165px;
-    margin-right: 26px;
-    margin-bottom: 18px;
-    float: left;
+
+.wrapper {
+    /* width: 900px; */
+    margin: 0 auto;
 }
 
+.header,
+.footer {
+    text-align: center;
+    background-color: #add8e6;
+    min-height: 60px;
+}
+
+.menu_content {
+    background-color: #f0e68c;
+}
+
+.menu {
+    float: left;
+    width: 200px;
+    padding: 30px 10px 10px 10px;
+}
+
+.menu ul {
+    padding-left: 20px;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 20px;
+    background: url("../img/boll.jpeg") repeat-y right top;
+    background-color: #ffffff;
+}
+
+.content h3 {
+    text-align: center;
+}
+
+.content img {
+    width: 250px;
+    height: 165px;
+    float: left;
+    margin-right: 20px;
+}
