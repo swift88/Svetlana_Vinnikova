@@ -1,0 +1,9 @@
+@media all and (max-width:608px){
+    div.float-article input {
+       float: none;
+        width: 100%;
+    }
+    input[name="publication"]{
+        display: block;
+    }
+}
