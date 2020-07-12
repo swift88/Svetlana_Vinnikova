@@ -1,0 +1,25 @@
+@media all and (max-width:616px){
+    div.float-article input {
+       float: none;
+        width: 100%;
+    }
+    .wrap {
+        min-width: 320px;    
+    }
+    select{
+        width: 100%;
+        margin-bottom: -9px;
+    }
+
+    span.radio,select{
+        display: block;
+    }
+    span.radio{
+        margin-bottom: 0px;
+    }
+   
+    span.comment{
+        margin-top: 5px;
+        margin-bottom: 6px;
+    }
+}

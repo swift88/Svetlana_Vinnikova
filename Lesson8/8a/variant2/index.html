@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="media.css">
+    <title>Заполните анкету</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        input[type=text],
+        textarea {
+            width: 100%;
+        }
+
+        input,
+        select {
+            margin-bottom: 6px;
+        }
+
+        .container {
+            border-radius: 5px;
+            background-color: #f0bcbc;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <p>Для публикации вашей статьи, заполните пожалуйста следующую форму:</p>
+        </div>
+        <div class="column">
+            <form action="http://fe.it-academy.by/TestForm.php">
+                <label>Название статьи:
+                    <input type='text' name='article-title'></label><br>
+                <label>Рубрика: <select name='heading'>
+                        <option value=" technology">компьютерная техника</option>
+                        <option value="design">графика и дизайн</option>
+                        <option value="programming" selected>программирование</option>
+                    </select></label><br>
+                <span> Публикация:</span>
+                <input type='radio' name='publication' value=site>на сайте
+                <input type='radio' name='publication' value=magazine>в журнале
+                <input type='radio' name='publication' value=site+magazine>на сайте и в журнале<br>
+                <label> Разрешить комментарии:
+                    <input type='checkbox' name='comments' checked></label><br>
+                <label>Текст статьи:<br>
+                    <textarea name='article'></textarea><br>
+                    <input type='submit' value='Опубликовать'>
+                </label>
+            </form>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
