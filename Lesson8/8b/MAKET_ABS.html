@@ -12,14 +12,6 @@
 
         .wrap {
             width: 100%;
-            /* min-height: 100%; */
-            background-color: aqua;
-            position: relative;
-        }
-
-        .wrap p {
-            text-align: center;
-
         }
 
         img {
@@ -28,63 +20,53 @@
         }
 
         .items {
-            background-color: yellowgreen;
-            width: 50%;
-            height: 50%;
-            /* overflow: auto; */
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-
+            position: relative;
+            width: 330px;
+            height: 330px;
+            margin: 0 auto;
         }
 
-        .item1 {
+        .items>div {
             position: absolute;
         }
 
         .item2 {
-            position: absolute;
+            right: 50px;
         }
 
         .item3 {
-            position: absolute;
+            right: 103px;
+            top: 93px;
+        }
+
+        .item4 {
+            right: 104px;
+            top: 32px;
+        }
+
+        .items>div:hover {
+            z-index: 1;
         }
     </style>
 </head>
 
 <body>
     <div class="wrap">
-        <p>Я к вам пишу – чего же боле? <br>
-            Что я могу еще сказать?<br>
-            Теперь, я знаю, в вашей воле<br>
-            Меня презреньем наказать. <br><br>
-
-            Но вы, к моей несчастной доле<br>
-            Хоть каплю жалости храня, <br>
-            Вы не оставите меня. <br><br>
-
-            Сначала я молчать хотела;<br>
-            Поверьте: моего стыда <br>
-            Вы не узнали б никогда,<br>
-            Когда б надежду я имела<br>
-            Хоть редко, хоть в неделю раз <br>
-            В деревне нашей видеть вас,<br><br>
-
-            Чтоб только слышать ваши речи,<br>
-            Вам слово молвить, и потом <br>
-            Все думать, думать об одном<br>
-            И день и ночь до новой встречи.
-        </p>
+        <div class="text">Я к вам пишу – чего же боле? Что я могу еще сказать? Теперь, я знаю, в вашей воле Меня
+            презреньем наказать.
+            Но вы, к моей несчастной доле Хоть каплю жалости храня, Вы не оставите меня. Сначала я молчать хотела;
+            Поверьте: моего стыда Вы не узнали б никогда, Когда б надежду я имела Хоть редко, хоть в неделю раз В
+            деревне нашей видеть вас, Чтоб только слышать ваши речи, Вам слово молвить, и потом Все думать, думать об
+            одном И день и ночь до новой встречи. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid eum
+            nam nisi ex voluptatibus dolorem quod ullam explicabo, quaerat earum reprehenderit molestiae praesentium
+            repudiandae minus? Atque laboriosam hic accusamus odit.
+        </div>
         <div class="items">
             <div class="item1"><img src="img/biohazard.png"></div>
             <div class="item2"><img src="img/Man-and-woman.png"></div>
-            <div class="item3"><img src="img/No_smoking.png"></div>
             <div class="item3"><img src="img/Yin_and_Yang.png"></div>
+            <div class="item4"><img src="img/No_smoking.png"></div>
         </div>
-
     </div>
 
 
