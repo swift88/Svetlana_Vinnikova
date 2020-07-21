@@ -6,61 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            height: 10000px;
+        input.SReadMoreRadio {
+            display: none;
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        input.SReadMoreRadio+label+div {
+            display: none;
         }
 
-        .wrap {
-            width: 500px;
-            height: 300px;
-            background-color: yellow;
-            padding: 1px;
-            margin: 30px;
-            position: relative;
+        input.SReadMoreRadio:checked+label+div {
+            display: block;
         }
 
-        .wrap>div {
-            width: 50px;
-            height: 50px;
-            position: absolute;
+        input.SReadMoreRadio+label {
+            text-decoration: underline;
+            cursor: pointer;
         }
 
-        .item1 {
-            background-color: green;
-            left: 171px;
-            top: 131px;
+        input.SReadMoreRadio:checked+label {
+            display: none;
         }
 
-        .item2 {
-            background-color: red;
-            left: 211px;
-            top: 111px;
+        input.SReadMoreRadio+label+div+input+label {
+            display: none;
+            text-decoration: underline;
+            cursor: pointer;
         }
 
-        .item3 {
-            background-color: blue;
-            left: 193px;
-            top: 147px;
+        input.SReadMoreRadio:checked+label+div+input+label {
+            display: block;
         }
     </style>
 </head>
 
 <body>
 
-    <div class="wrap">
+    <div>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dignissimos nemo laborum autem
-            doloremque! Debitis dicta nemo alias eius sed praesentium facilis maiores eligendi aspernatur saepe,
-            exercitationem dolorem consequuntur ipsum.</p>
-        <div class="item1">green</div>
-        <div class="item2">red</div>
-        <div class="item3">blue</div>
+        <div>
+            Подари мне любовь — остального полны закрома. <br>
+            Остальное выходит из моды, становится жалким, никчёмным.<br>
+            А любовь — это больше, чем просто курортный роман,<br>
+            Это больше, чем страсть соблазнять симпатичных девчонок.
+        </div>
+
+        <input type=radio class='SReadMoreRadio' name=POEM id=POEM1 value=1>
+        <label for=POEM1>показать больше</label>
+        <div>
+            Понимаю, что есть вероятность остаться ни с чем,<br>
+            Лучше &mdash; новый мобильный, красивая сумочка, бусы.<br>
+            В общем, что-то из модных и всеми желанных вещей,<br>
+            Но увы,у меня на подарки такие нелепые вкусы…
+        </div>
+        <input type=radio class='SReadMoreRadio' name=POEM id=POEM2 checked value=2>
+        <label for=POEM2>скрыть</label>
+
     </div>
 
 </body>

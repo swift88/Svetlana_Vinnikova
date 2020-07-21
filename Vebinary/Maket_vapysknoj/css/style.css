@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    font-size: 14px;
+    font-family: 'Gudea', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+.wrapper{
+    width: 1300px;
+    background: url(../img/fon2.png);
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.container{
+    width: 1020px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    opacity: 0.7;
+}
+.header{
+    padding: 43px 39px;
+}
+.header >p{
+    text-transform: uppercase;
+    color:#333333;
+    font-family: 'Raleway', sans-serif;
+    font-size:45px;
+}
+.navigation1_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.fine > span{
+    text-transform: uppercase;
+    color:#979695;
+    font-size:25px;
+}
+
+.navigation1 a:not(:last-child) {
+    border-right: 2px solid #979695;
+    padding-right: 6px;
+}
+.basket{
+   width: 204px;
+   height: 38px;
+ }
+.basket img{
+    margin-right: 7px;
+    vertical-align: -4px;
+}
+
+.basket p{
+    color:#979695;
+    font-family: 'Raleway', sans-serif;
+}
+
+.basket p span{
+    color:#92A351;
+    font-size: 16px;
+}
+.basket_text{
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
