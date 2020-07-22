@@ -8,65 +8,136 @@ body{
     overflow-x: hidden;
     font-size: 14px;
     font-family: 'Gudea', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
 }
 .wrapper{
-    width: 1300px;
+    max-width: 1300px;
     background: url(../img/fon2.png);
     margin: 0 auto;
     border: 1px solid red;
 }
 .container{
-    width: 1020px;
+    max-width: 1030px;
+    margin: 10px auto;
+    padding: 35px 39px;
     background-color: #ffffff;
-    margin: 0 auto;
     opacity: 0.7;
 }
-.header{
-    padding: 43px 39px;
+
+/* =============== Header ==================== */
+
+.header_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
 }
-.header >p{
+
+.header_top div{
+    margin-right: 20px;
+    white-space: nowrap;
+}
+.header_top div.logo{
+    margin-right: 70px;
+}
+.logo{
+    position: relative;
+    top: 7px;
+}
+.logo span:first-child{
     text-transform: uppercase;
     color:#333333;
     font-family: 'Raleway', sans-serif;
     font-size:45px;
 }
-.navigation1_flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
-.fine > span{
+.logo span:last-child{
     text-transform: uppercase;
     color:#979695;
     font-size:25px;
 }
 
-.navigation1 a:not(:last-child) {
+.navigation1 ul li{
+    display: inline-block;
     border-right: 2px solid #979695;
-    padding-right: 6px;
+    padding: 0px 9px 0 4px;
+}
+.navigation1 li:last-child{
+    border-right: none;    
+}
+.navigation1 ul li a{
+    opacity:0.8;
+    color:#545454;
+}
+.navigation1 ul li a:hover{
+    opacity:1;
+    color:#333333;
+    font-weight: bold;
 }
 .basket{
    width: 204px;
    height: 38px;
+   display: inline-flex;
  }
 .basket img{
     margin-right: 7px;
     vertical-align: -4px;
 }
-
-.basket p{
-    color:#979695;
-    font-family: 'Raleway', sans-serif;
-}
-
-.basket p span{
+ 
+.basket_text span:first-child{
+    color: #979695;
+}  
+.basket_text span:last-child{
     color:#92A351;
     font-size: 16px;
 }
-.basket_text{
-    display: inline-block;
+div.basket, div.basket_text{
+    margin-right: 0;
 }
+/* =============== navigation2 ==================== */
+.navigation2_flex{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation2_flex a{
+    margin-right: 25px;
+    color:#A6B95B;
+    font-size:18px;
+}
+.navigation2_flex a:hover{
+    font-weight: bold;
+    border-bottom: 2px solid #A6B95B;
+}
+
+
+
+
+
+
+/* =============== Preview  ==================== */
+
+
+
+
+
+
+
+
+/* =============== New Products  ==================== */
+
+
+
+
+
+
+
+
+
 
 
 
