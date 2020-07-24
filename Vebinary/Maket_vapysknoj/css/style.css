@@ -16,13 +16,14 @@ a{
     text-decoration: none;
 }
 .wrapper{
-    max-width: 1300px;
+    max-width: 2000px;
     background: url(../img/fon2.png);
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    padding-top: 14px;
 }
 .container{
     max-width: 1030px;
-    margin: 10px auto;
+    margin: 12px auto;
     padding: 35px 39px;
     background-color: #ffffff;
     opacity: 0.8;
@@ -121,7 +122,9 @@ div.basket, div.basket_text{
 /* =============== Preview  ==================== */
 .content1{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 .preview{
@@ -129,38 +132,77 @@ div.basket, div.basket_text{
     height: 369px;
     position: relative;
     overflow: hidden;
+    margin-right: 10px;
 }
 .preview_foto{
-    position: absolute;
+    /* position: absolute; */
     /* position: relative; */
-    top: 0;
-    left: 0%;
+    /* top: 0; */
+    /* left: 0%; */
     z-index: 1;
 }
 .preview_content{
     position: absolute;
-    width: 235px;
+    width: 236px;
     height: 185px;
-    background-color: rgba(107, 120, 231, 0.7);
+    /* background-color: rgba(107, 120, 231, 0.7); */
     /* position: relative; */
-    top: 0;
-    left: 0%;
+    top: 55px;
+    left: 55px;
     z-index: 2;
 }
-.preview_content p{
+.preview_content >p{
     color:#FAF9F6;
     font-size:24px;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
     margin-bottom: 30px;
 }
+.preview_content_text{
+    width: 175px;
+    height: 120px;
+}
 .preview_content_text p{
     color:#EAEAE9;
     margin-bottom: 19px;
 }
-
-
-
+.sale_on{
+    width: 220px;
+    /* height: 255px; */
+    /* border: solid 1px rgb(234 231 231); */
+}
+.sale_on_top{
+    border: solid 1px rgb(234 231 231);
+}
+.sale_on_text{
+    width: 220px;
+    height: 111px;
+    padding: 25px 0 0 10px;
+    border-bottom: solid 1px rgb(241 239 239);
+}
+.sale_on_text p:first-of-type{
+    color:#333333;
+    font-family: 'Raleway', sans-serif;
+    font-size:35px;
+}
+.sale_on_text p:last-of-type{
+    color:#936D5C;
+    font-size:16px;
+}
+.sale_on_img{
+    height: 141px;
+}
+.sale_on_subscribe{
+    border-top: 1px dotted;
+    margin-top: 12px;
+    padding-top: 12px;
+    width: 220px;
+    /* height: 91px; */
+    color: #979695;
+ }
+ .sale_on_button{
+    margin-top: 17px;
+ }
 
 /* =============== New Products  ==================== */
 div.new_products > p{
@@ -176,21 +218,24 @@ div.new_products_flex{
 .new_products_item{
     /* border: 1px solid red; */
     width: 25%;
-    padding: 0px 15px;
+    padding: 0px 9px;
+    height: 291px;
+    margin-bottom: 30px;
 }
 .new_products_item:last-child{
     padding-right: 0px;
 }
 .new_products_icon{
-    width: 220px;
+    width: 100%;
     height: 130px;
 }
 .new_products_title{
     display: flex;
     justify-content: space-between;
-    margin: 12px 0px;
-    color:#92A351;
-    font-family: 'Raleway', sans-serif;
+    height: 30px;
+    margin-top: 12px;
+    color: #92A351;
+    font-family: 'Raleway', sans-serif;   
 }
 .new_products_title span{
     margin-left: 7px;
@@ -198,7 +243,10 @@ div.new_products_flex{
 .new_products_text{
     color:#979695;
     margin-bottom: 20px;
+    height: 75px;
+    overflow: hidden;
 }
+
 form.view button:first-of-type{
     margin-right: 20px;
 }
@@ -206,17 +254,56 @@ form.view button:first-of-type{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* =============== Footer  ==================== */
+.footer{
+    display: flex;
+}
+.footer_info,
+.footer_account,
+.footer_contacts{
+    width: 24%;
+    border-right: 1px solid rgb(189, 187, 187);
+    padding: 0px 12px;
+}
+.footer_info >p,
+.footer_account >p,
+.footer_contacts p{
+    color:#979695;
+    font-family: 'Raleway', sans-serif;
+    font-size:21px;
+    margin-bottom: 10px;
+}
+.footer_info li,
+.footer_account li{
+   margin-bottom: 4px;
+}
+.footer_info a,
+.footer_account a,
+.footer_contacts_adress{
+    color:#979695;
+}
+.footer_info a:hover,
+.footer_account a:hover{
+    font-weight: bold;
+    color:#636262;
+}
+.footer_delivery{
+    width: 28%;
+    padding-left: 12px;
+}
+.footer_delivery >p{
+    color:#333333;
+    font-family: 'Raleway', sans-serif;
+    font-size:30px;
+    margin-bottom: 10px;
+}
+.footer_delivery span:first-of-type{
+    color:#936D5C;
+    font-size:18px;
+}
+.footer_delivery span:last-of-type{
+    color:#979695;
+}
 
 
 
