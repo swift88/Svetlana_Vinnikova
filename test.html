@@ -6,62 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        input.SReadMoreRadio {
-            display: none;
+        * {
+            margin: 0;
+            padding: 5px;
+            box-sizing: border-box;
         }
 
-        input.SReadMoreRadio+label+div {
-            display: none;
+        body {
+            overflow-x: hidden;
+            font-size: 14px;
+            font-family: 'Gudea', sans-serif;
         }
 
-        input.SReadMoreRadio:checked+label+div {
-            display: block;
+        .preview {
+            width: 60%;
+            height: 269px;
+            overflow: hidden;
+            position: relative;
         }
 
-        input.SReadMoreRadio+label {
-            text-decoration: underline;
-            cursor: pointer;
+        .preview_foto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate3d(-50%, -50%, 0);
+            z-index: 1;
         }
 
-        input.SReadMoreRadio:checked+label {
-            display: none;
+        .preview_content {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 4%;
+            color: #ffffff;
+            z-index: 2;
         }
 
-        input.SReadMoreRadio+label+div+input+label {
-            display: none;
-            text-decoration: underline;
-            cursor: pointer;
+        /* ===========    Второй способ  ========= */
+        .preview2 {
+            width: 500px;
+            height: 269px;
+            background: url(Vebinary/Maket_vapysknoj/img/preview.jpeg) no-repeat center center;
         }
 
-        input.SReadMoreRadio:checked+label+div+input+label {
-            display: block;
+        .preview_content2 {
+            width: 50%;
+            height: 100%;
+            color: #ffffff;
         }
     </style>
 </head>
 
 <body>
-
-    <div>
-
-        <div>
-            Подари мне любовь — остального полны закрома. <br>
-            Остальное выходит из моды, становится жалким, никчёмным.<br>
-            А любовь — это больше, чем просто курортный роман,<br>
-            Это больше, чем страсть соблазнять симпатичных девчонок.
+    <!-- ======================== Первый способ  ================ -->
+    <h2>Первый способ через position: relative и absolute</h2>
+    <div class="preview">
+        <img class="preview_foto" src="Vebinary/Maket_vapysknoj/img/preview.jpeg" alt="photo of towels" title="towels">
+        <div class="preview_content">
+            <p>claire aitch linen</p>
+            <p>Indulge yourself with the very best 100% cotton towels and linen by top UK designer
+                Claire Aitch. Exclusive.</p>
         </div>
-
-        <input type=radio class='SReadMoreRadio' name=POEM id=POEM1 value=1>
-        <label for=POEM1>показать больше</label>
-        <div>
-            Понимаю, что есть вероятность остаться ни с чем,<br>
-            Лучше &mdash; новый мобильный, красивая сумочка, бусы.<br>
-            В общем, что-то из модных и всеми желанных вещей,<br>
-            Но увы,у меня на подарки такие нелепые вкусы…
-        </div>
-        <input type=radio class='SReadMoreRadio' name=POEM id=POEM2 checked value=2>
-        <label for=POEM2>скрыть</label>
-
     </div>
+    <br>
+    <hr>
+    <!-- ===================  Второй способ ================== -->
+    <h2>
+        <h2>Второй способ через background:url</h2>
+    </h2>
+    <div class="preview2">
+        <div class="preview_content2">
+            <p>claire aitch linen</p>
+            <p>Indulge yourself with the very best 100% cotton towels and linen by top UK designer
+                Claire Aitch. Exclusive.</p>
+        </div>
+    </div>
+    <br>
 
 </body>
 
