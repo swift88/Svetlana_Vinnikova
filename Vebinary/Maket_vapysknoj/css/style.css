@@ -8,6 +8,7 @@ body{
     overflow-x: hidden;
     font-size: 14px;
     font-family: 'Gudea', sans-serif;
+    color: #979695; /*не забыть убрать цвет с тегов*/
 }
 li{
     list-style-type: none;
@@ -17,17 +18,16 @@ a{
 }
 .wrapper{
     max-width: 2000px;
-    background: url(../img/fon2.png);
-    /* margin: 0 auto; */
-    padding-top: 14px;
+    background: url(../img/fon.png) center;  /*не забыть переформатировать картинку*/
+    margin: 0 auto;
+    padding-top: 20px;
 }
 .container{
-    max-width: 1030px;
-    margin: 12px auto;
+    max-width: 1020px;
+    margin: 15px auto;
     padding: 35px 39px;
-    background-color: #ffffff;
-    opacity: 0.8;
-}
+    background-color: #ffffff94;
+ }
 
 /* =============== Header ==================== */
 
@@ -308,7 +308,7 @@ form.view button:first-of-type{
 .footer_down{
     max-width: 1030px;
     margin: 0px auto;
-    padding: 10px 39px;
+    padding: 8px 39px 29px;
     display: flex;
     justify-content: space-between;
 }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST_ANIM</title>
+    <style>
+        .container {
+            width: 700px;
+            height: 700px;
+            border: 3px solid rgb(82, 44, 218);
+        }
+
+        @keyframes MyAnimation2 {
+            from {
+                background: url('boys.jpg') -914px -246px;
+            }
+
+            to {
+                background: url('boys.jpg') -1555px -246px;
+            }
+
+
+        }
+
+        .EX2 {
+            width: 123px;
+            height: 230px;
+            animation: MyAnimation2 1s steps(5) infinite;
+        }
+
+        .yin {
+            margin-right: 40px;
+        }
+
+        .container:hover img.yin {
+            transform: rotate(90deg);
+        }
+
+
+        .smok {
+            transition: transform 0.5s
+        }
+
+        .container:hover img.smok {
+            transform: scale(0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class='EX2'></div>
+        <img class="yin" src="Yin_and_Yang.png" alt="Yin_and_Yang">
+        <img class="smok" src="No_smoking.png" alt="No_smoking">
+
+    </div>
+
+</body>
+
+</html>
