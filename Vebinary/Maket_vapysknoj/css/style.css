@@ -108,6 +108,7 @@ div.basket, div.basket_text{
     margin-right: 25px;
     color:#A6B95B;
     font-size:18px;
+    border-bottom: 2px solid transparent;
 }
 .navigation2_flex a:hover{
     font-weight: bold;
