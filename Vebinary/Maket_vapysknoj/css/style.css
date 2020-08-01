@@ -8,7 +8,7 @@ body{
     overflow-x: hidden;
     font-size: 14px;
     font-family: 'Gudea', sans-serif;
-    color: #979695; /*не забыть убрать цвет с тегов*/
+    color: #979695;
 }
 li{
     list-style-type: none;
@@ -56,8 +56,7 @@ a{
 }
 .logo span:last-child{
     text-transform: uppercase;
-    color:#979695;
-    font-size:25px;
+   font-size:25px;
 }
 
 .navigation1 ul li{
@@ -87,9 +86,7 @@ a{
     vertical-align: -4px;
 }
  
-.basket_text span:first-child{
-    color: #979695;
-}  
+ 
 .basket_text span:last-child{
     color:#92A351;
     font-size: 16px;
@@ -113,6 +110,7 @@ div.basket, div.basket_text{
     position: relative;
     margin-right: 25px;
 }
+
 .navigation2 >ul li a{
     display: block;
     color:#A6B95B;
@@ -140,7 +138,7 @@ div.basket, div.basket_text{
 }
 .navigation2 li:hover > ul{
    display: block;
-  z-index: 1;
+z-index: 1;
 }
 form.search{
     position: relative;
@@ -168,7 +166,6 @@ form.search button{
 /* =============== Preview  ==================== */
 .content1{
     display: flex;
-    /* flex-wrap: wrap; */
     justify-content: space-between;
     margin-bottom: 20px;
 }
@@ -218,8 +215,6 @@ form.search button{
 
 .sale_on{
     width: 220px;
-    /* height: 255px; */
-    /* border: solid 1px rgb(234 231 231); */
 }
 .sale_on_top{
     border: solid 1px rgb(234 231 231);
@@ -229,6 +224,7 @@ form.search button{
     height: 111px;
     padding: 25px 0 0 10px;
     border-bottom: solid 1px rgb(241 239 239);
+    position: relative;
 }
 .sale_on_text p:first-of-type{
     color:#333333;
@@ -238,6 +234,11 @@ form.search button{
 .sale_on_text p:last-of-type{
     color:#936D5C;
     font-size:16px;
+}
+.sale_on_text img{
+    position: absolute;
+    top: 30px;
+    right: 18px;
 }
 .sale_on_img{
     height: 141px;
@@ -253,8 +254,6 @@ form.search button{
     margin-top: 12px;
     padding-top: 12px;
     width: 220px;
-    /* height: 91px; */
-    color: #979695;
  }
  .sale_on_subscribe>img{
      float: right;
@@ -265,14 +264,14 @@ form.search button{
     margin-top: 11px;
     position: relative;
  }
- .sale_on_button form input{
+ input.sale_button{
     width: 218px;
     height: 26px;
     padding: 5px;
     border: 1px solid #a5a5ab;
     background-color:#FBF9F7;
 }
-.sale_on_button button{
+button.sale_onbatton{
     position: absolute;
     top: 3px;
     right: 5px;
@@ -283,11 +282,14 @@ form.search button{
     border-radius: 3px;
     cursor: pointer;
 }
-
+.hr{width: 100%;
+    height: 7px;
+   background: url(../img/hr1.png) repeat-x center;
+   clear: both;
+ }
 /* =============== New Products  ==================== */
 div.new_products > p{
-    color:#979695;
-    font-family: 'Raleway', sans-serif;
+   font-family: 'Raleway', sans-serif;
     font-size:24px;
     margin: 13px 0px;
   }
@@ -296,11 +298,16 @@ div.new_products_flex{
     display: flex;
   }
 .new_products_item{
-    /* border: 1px solid red; */
     width: 25%;
     padding: 0px 9px;
     height: 291px;
     margin-bottom: 30px;
+    position: relative;
+}
+img.discount{
+    position: absolute;
+    left: 21px;
+    top: 87px;
 }
 .new_products_item:last-child{
     padding-right: 0px;
@@ -321,7 +328,6 @@ div.new_products_flex{
     margin-left: 7px;
 }
 .new_products_text{
-    color:#979695;
     margin-bottom: 20px;
     height: 75px;
     overflow: hidden;
@@ -340,6 +346,11 @@ div.new_products_flex{
     color:#464545;
     font-family: 'Raleway', sans-serif; 
     margin-right: 20px;
+}
+.new_products_buttons >a:hover,
+.new_products_buttons form button:hover{
+    font-weight: bold;
+    background-color:#d8d0c5;
 }
 .new_products_buttons form button{
     width: 109px;
@@ -372,7 +383,6 @@ div.new_products_flex{
 .footer_info >p,
 .footer_account >p,
 .footer_contacts p{
-    color:#979695;
     font-family: 'Raleway', sans-serif;
     font-size:21px;
     margin-bottom: 10px;
@@ -408,9 +418,6 @@ div.new_products_flex{
     color:#936D5C;
     font-size:18px;
 }
-.footer_delivery span:last-of-type{
-    color:#979695;
-}
 .paypal{
     display: flex;
     justify-content: space-between;
@@ -418,7 +425,6 @@ div.new_products_flex{
 .paypal img{
    margin-right: 5px;
 }
-
 
 /* =============== Footer_down  ==================== */
 .footer_down{
@@ -432,8 +438,7 @@ div.new_products_flex{
 .footer_down_logo{
     width: 240px;
     height: 70px;
-    /* border: 1px solid red; */
-}
+ }
 .footer_down_logo p:nth-child(1){
     text-transform: uppercase;
     color:#333333;
@@ -442,7 +447,6 @@ div.new_products_flex{
 }
 .footer_down_logo p:nth-child(2){
     text-transform: uppercase;
-    color:#979695;
 }
 .footer_down_logo p:nth-child(3){
     color:#A9A9A9;

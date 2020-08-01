@@ -17,6 +17,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .look_preview_left {
@@ -40,7 +41,7 @@ img.look_preview_foto {
     margin-bottom: 34px;
 }
 .look_preview_button1{
-   margin: 25px 0px;
+    margin: 25px 0px;
     display: flex;
 }
 .look_preview_form,
@@ -51,18 +52,46 @@ img.look_preview_foto {
 .look_preview_button2{
    display: flex;
 }
+.look_preview_button2 button{
+    padding: 4px;
+}
+.look_preview_button2 button:first-of-type img{
+   width: 18px;
+   height: 16px;
+   margin-right: 5px;
+   vertical-align: middle;
+ }
+.img_left{
+    position: relative;
+}
 .img_left img{
     width: 182px;
     height: 130px;
-    margin: 0px 10px 10px 0px;
+    margin: 0px 10px 18px 0px;
 }
+.glass2 {
+    opacity: 0.7;
+    transition: 1s;
+}
+.glass2:hover {
+    opacity: 1;
+    transform: scale(2); 
+}
+img.glass{
+    position: absolute;
+    width: 43px;
+    height: 44px;
+    top: 42px;
+    left: 66px;
+}
+
 .more_details {
-   padding-right: 10px;
+   padding-right: 20px;
 }
 .more_details h3{
     font-size:24px;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 27px;
+    margin: 1px 0px 20px 0px;
 }
 
 .more_details a{
@@ -73,14 +102,35 @@ img.look_preview_foto {
     margin-bottom: 10px;
     border-bottom: 1px solid transparent;
 }
+.more_details a:first-of-type{
+    font-weight: bold;
+    border-bottom: 1px solid #92A351;
+}
 .more_details a:hover{
-   border-bottom: 1px solid;
+    font-weight: bold;
+   border-bottom: 1px solid #92A351;
 }
 .more_details p{
-    padding: 5px 10px 0px 0px;
+    padding: 5px 10px 5px 0px;
+}
+.more_details p:last-of-type{
+   margin-bottom: 10px;
 }
 /* =============== look_preview_right ==================== */
-
+div.make_like {
+    margin-bottom: 10px;
+}
+div.make_like span{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+}
+div.make_like img{
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    margin-right: 20px;
+    vertical-align: text-bottom;
+}
 .preview_right_item {
     width: 220px;
     height: 180px;
@@ -88,7 +138,8 @@ img.look_preview_foto {
     background-color: #EEE6DB;
     padding: 3px;
     overflow: hidden;
-    margin-bottom: 20px;
+    margin: 10px 0px;
+    position: relative;
 }
 
 .preview_right_foto {
@@ -109,12 +160,32 @@ img.look_preview_foto {
 }
 
 /* =============== Новая страница cart.html ==================== */
+span.continue_shopping{
+    float: right;
+    margin-bottom: 40px;
+}
+form.cart_basket button,
+form.cart_bottom_form button,
+form.cart_bottom_form input{
+    padding: 3px;
+}
+form.cart_basket button img,
+button.update img{
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.cart_bottom_button{
+    position: relative;
+}
+
 .cart_table table{
     margin-top: 20px;
     width: 100%;
     border: 1px solid rgb(194, 192, 192);
     border-collapse: separate; 
     border-spacing: 12px 16px;
+    margin-bottom: 24px;
 }
 
 .cart_table table td {
@@ -135,10 +206,14 @@ img.look_preview_foto {
     font-family: 'Raleway', sans-serif;
     font-size:18px;
 }
+.cart_table p{
+    float: right;
+}
 .cart_bottom{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 46px;
 }
 .cart_bottom span:first-child{
     display: inline-block;
@@ -147,7 +222,12 @@ img.look_preview_foto {
     font-size:18px;
 }
 .cart_bottom_form button:nth-child(2){
-margin: 0px 30px;
+    top: 3px;
+    left: 188px;
+}
+.cart_bottom_form input,
+.cart_bottom_form button{
+    margin-right: 20px;
 }
 span.continue_shopping a{
     color:#A6B95B;
@@ -189,6 +269,7 @@ span.continue_shopping a{
 .register_left input,
 .contact_left input{
    margin: 10px 10px 10px 0px;
+   cursor: pointer;
 }
 .register_left form,
 .contact_left form{
