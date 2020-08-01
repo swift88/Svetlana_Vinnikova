@@ -152,41 +152,59 @@ margin: 0px 30px;
 span.continue_shopping a{
     color:#A6B95B;
 }
-/* =============== Новая страница log_in.html и register.html ==================== */
+/* =============== Новые страницы log_in.html,register.html,contact.html,privacy.html ==================== */
 .login,
-.register{
+.register,
+.contact{
     display: flex;
 }
 .login_left,
-.register_left{
+.register_left,
+.contact_left{
     width: 70%;
     padding: 5px 5px 5px 0px;
     margin-right: 15px;
 }
 .login_right,
-.register_right{
+.register_right,
+.contact_right{
     width: 30%;
     padding: 5px 5px 5px 0px;
 }
 .login_left p,
-.login_right p{
+.login_right p,
+.contact_left p,
+.contact_right>img,
+.privacy p{
     padding: 10px 0px;
    
 }
 
 .login_right p a,
-.register_left p a{
+.register_left p a,
+.contact_left p a,
+.privacy p span a{
     color:#A6B95B
 }
-.register_left input{
+.register_left input,
+.contact_left input{
    margin: 10px 10px 10px 0px;
 }
-.register_left form{
+.register_left form,
+.contact_left form{
    display: flex;
    flex-wrap: wrap;
  }
- .register_left form input:last-of-type{
-    
-  }
+
+.contact_left form textarea{
+    width:100%; 
+    height:156px;
+    resize: none;
+}
+.contact_right>img{
+    width: 220px;
+    height: 180px;
+}
 
 
+/* =============== Новая страница .html ==================== */

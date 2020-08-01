@@ -18,7 +18,7 @@ a{
 }
 .wrapper{
     max-width: 2000px;
-    background: url(../img/fon.png) center;  /*не забыть переформатировать картинку*/
+    background: url(../img/fon.jpeg) center;  
     margin: 0 auto;
     padding-top: 20px;
 }
@@ -26,7 +26,7 @@ a{
     max-width: 1020px;
     margin: 15px auto;
     padding: 35px 39px;
-    background-color: #ffffff94;
+    background-color: rgb(255 255 255 / 60%);
  }
 
 /* =============== Header ==================== */
@@ -104,20 +104,65 @@ div.basket, div.basket_text{
     justify-content: space-between;
     white-space: nowrap;
 }
-.navigation2_flex a{
+
+.navigation2 >ul{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation2 >ul li{
+    position: relative;
     margin-right: 25px;
+}
+.navigation2 >ul li a{
+    display: block;
     color:#A6B95B;
     font-size:18px;
     border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
 }
-.navigation2_flex a:hover{
+.navigation2 li a:hover{
     font-weight: bold;
     border-bottom: 2px solid #A6B95B;
+    transition: all 0.3s ease;
+}
+.navigation2 li ul{
+    position: absolute;
+    min-width: 150px;
+    display: none;
 }
 
-
-
-
+.navigation2 li > ul li a{
+   padding: 5px;
+   background-color: #f1f1e6;
+   border-radius: 13px;
+   box-shadow: 0 0 20px #c7cca4 inset;
+  
+}
+.navigation2 li:hover > ul{
+   display: block;
+  z-index: 1;
+}
+form.search{
+    position: relative;
+}
+form.search input{
+    width: 218px;
+    height: 26px;
+    padding: 5px;
+    background-color: rgb(240 231 222 / 0.7);
+    border: 1px solid #a5a5ab;
+}
+form.search button{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 26px;
+    height: 20px;
+    background-color: rgb(239 237 233 / 0.6);
+    border: 1px solid #b2b3b2;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 
 /* =============== Preview  ==================== */
@@ -128,45 +173,49 @@ div.basket, div.basket_text{
     margin-bottom: 20px;
 }
 
-.preview{
+.content1 .preview{
+   background: url(../img/preview.jpeg) no-repeat center;
     width: 700px;
     height: 369px;
-    position: relative;
-    overflow: hidden;
-    margin-right: 10px;
-}
-.preview_foto{
-    /* position: absolute; */
-    /* position: relative; */
-    /* top: 0; */
-    /* left: 0%; */
-    z-index: 1;
+    margin-right: 15px;
 }
 .preview_content{
-    position: absolute;
-    width: 236px;
-    height: 185px;
-    /* background-color: rgba(107, 120, 231, 0.7); */
-    /* position: relative; */
-    top: 55px;
-    left: 55px;
-    z-index: 2;
+    height: 251px;
+    overflow: hidden;
+    margin: 40px 0px 0px 31px;
 }
 .preview_content >p{
     color:#FAF9F6;
     font-size:24px;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 30px;
 }
 .preview_content_text{
-    width: 175px;
-    height: 120px;
+    width: 177px;
+    height: 90px;
+    overflow: hidden;
+    margin: 24px 0px;
 }
 .preview_content_text p{
     color:#EAEAE9;
-    margin-bottom: 19px;
+ }
+.preview_button{
+    width: 77px;
+    height: 28px;
+    background-color:rgb(251 249 246 / 0.9);
+    text-align: center;
+    border: 1px solid gray;
 }
+.preview_button a{
+    color:#333333;
+    font-family: 'Raleway', sans-serif;
+    font-size:15px;
+    display: inline-block;
+    padding-top: 4px;
+    width: 100%;
+    height: 100%;
+}
+
 .sale_on{
     width: 220px;
     /* height: 255px; */
@@ -192,6 +241,12 @@ div.basket, div.basket_text{
 }
 .sale_on_img{
     height: 141px;
+    position: relative;
+}
+.sale_on_img .preview_button{
+    position: absolute;
+    bottom: 25px;
+    right: 28px;
 }
 .sale_on_subscribe{
     border-top: 1px dotted;
@@ -201,9 +256,33 @@ div.basket, div.basket_text{
     /* height: 91px; */
     color: #979695;
  }
- .sale_on_button{
-    margin-top: 17px;
+ .sale_on_subscribe>img{
+     float: right;
  }
+
+
+ .sale_on_button{
+    margin-top: 11px;
+    position: relative;
+ }
+ .sale_on_button form input{
+    width: 218px;
+    height: 26px;
+    padding: 5px;
+    border: 1px solid #a5a5ab;
+    background-color:#FBF9F7;
+}
+.sale_on_button button{
+    position: absolute;
+    top: 3px;
+    right: 5px;
+    width: 26px;
+    height: 20px;
+    background-color:#e0e0dcb3;
+    border: 1px solid #b2b3b2;
+    border-radius: 3px;
+    cursor: pointer;
+}
 
 /* =============== New Products  ==================== */
 div.new_products > p{
@@ -247,10 +326,35 @@ div.new_products_flex{
     height: 75px;
     overflow: hidden;
 }
-
-form.view button:first-of-type{
+.new_products_buttons{
+    display: flex;
+}
+.new_products_buttons >a{
+    display: inline-block;
+    width: 44px;
+    height: 22px;
+    padding: 1px;
+    text-align: center;
+    background-color:#EEE6DB;
+    border: 1px solid #ccc9c9;
+    color:#464545;
+    font-family: 'Raleway', sans-serif; 
     margin-right: 20px;
 }
+.new_products_buttons form button{
+    width: 109px;
+    height: 22px;
+    padding: 1px;
+    text-align: center;
+    background-color:#EEE6DB;
+    border: 1px solid #ccc9c9;
+    color:#464646;
+    font-family: 'Raleway', sans-serif; 
+    font-size:14px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
 
 
 /* =============== Footer  ==================== */
@@ -287,6 +391,9 @@ form.view button:first-of-type{
     font-weight: bold;
     color:#636262;
 }
+.footer_contacts_adress span a{
+    text-decoration: underline;
+}
 .footer_delivery{
     width: 28%;
     padding-left: 12px;
@@ -304,14 +411,23 @@ form.view button:first-of-type{
 .footer_delivery span:last-of-type{
     color:#979695;
 }
+.paypal{
+    display: flex;
+    justify-content: space-between;
+}
+.paypal img{
+   margin-right: 5px;
+}
+
 
 /* =============== Footer_down  ==================== */
 .footer_down{
     max-width: 1030px;
     margin: 0px auto;
-    padding: 8px 39px 29px;
+    padding: 2px 39px 29px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footer_down_logo{
     width: 240px;
@@ -334,9 +450,12 @@ form.view button:first-of-type{
 }
 
 .footer_down_social{
-    width: 67px;
+    width: 64px;
     height: 29px;
-    /* border: 1px solid red; */
+    border: 1px solid #ccc9c9;
+    text-align: center;
+    padding: 2px;
+    background-color:#EEE6DB;
 }
    
     
