@@ -288,9 +288,7 @@ span.continue_shopping a{
 .privacy p span a{
     color:#A6B95B
 }
-.register_right p{
-    margin-bottom: 20px;
-}
+
 button.register{
    position: relative;
     padding: 2px;
@@ -353,5 +351,14 @@ form.error button:first-child{
 form.error button:first-child img{
     transform: rotate(180deg);
 }
-
-/* =============== Новая страница .html ==================== */
+div.Error{
+    margin: 20px;
+    opacity:0.2;
+    color:#979695;
+    font-family: 'Raleway', sans-serif;
+    font-size:72px;
+}
+img.error404{
+    margin-left: 5px;
+    vertical-align: text-bottom;
+}
