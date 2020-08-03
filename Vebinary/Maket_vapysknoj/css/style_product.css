@@ -73,10 +73,15 @@ img.look_preview_foto {
     opacity: 0.7;
     transition: 1s;
 }
-.glass2:hover {
+img.glass:hover img.glass2{
+    /* opacity: 1; */
+    /* transform: scale(2);  */
+}
+.glass2:hover{
     opacity: 1;
     transform: scale(2); 
 }
+
 img.glass{
     position: absolute;
     width: 43px;
@@ -308,6 +313,12 @@ button.register img {
     border-radius: 3px;
     cursor: pointer;
 }
+.how_register{
+    margin: 20px 0px;
+}
+.how_register h4{
+    margin: 10px 0px;
+}
 .login_right input{
     margin-bottom: 10px;
 }
@@ -362,3 +373,38 @@ img.error404{
     margin-left: 5px;
     vertical-align: text-bottom;
 }
+
+/* =============== Новая страница goods.html ==================== */
+.carousel-item img{
+   height: 400px;
+   margin-bottom: 20px;
+}
+.carousel-control-prev{
+    width: 36px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #1d1616;
+    top: 323px;
+    left: 42px;
+}
+.carousel-control-next{
+    width: 36px;
+    height: 38px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #1d1616;
+    top: 323px;
+    right: 42px;
+}
+.carousel-indicators li{
+    background-color: #211e1e;
+}
+.carousel-item a::after {
+    content: url('../img/extref.png')
+}
+.carousel-indicators{
+    bottom: 92px;
+}
+
+
