@@ -7,13 +7,77 @@
     <link href="https://fonts.googleapis.com/css2?family=Gudea&family=Raleway:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_product.css">
-    <!-- <link rel="stylesheet" href="css/media.css"> -->
+    <link rel="stylesheet" href="css/media.css">
     <title>Product</title>
 </head>
 
 <body>
     <!-- =============== Look Preview ==================== -->
     <div class="wrapper">
+        <!--=============== Header ==================== -->
+
+        <div class="container">
+            <header class="header">
+                <div class="header_top">
+                    <div class="logo"><span> Fabrique</span><br>
+                        <span>fine furnishings</span> </div>
+
+                    <div class="navigation1">
+                        <ul>
+                            <li> <a href="log_in.html" target="_blank" title="Log In">Log In</a></li>
+                            <li><a href="register.html" target="_blank" title="Registration">Register</a></li>
+                            <li><a href="cart.html" target="_blank" title="Wishlist">Wishlist</a></li>
+                            <li> <a href="error.html" target="_blank" title="questions-answers">FAQ</a></li>
+                        </ul>
+                        <button class="burger" type="button"><span class="burger_item"></span></button>
+                    </div>
+                    <div class="currency"> Currency&colon; &pound; &dollar; &euro;</div>
+                    <div class="basket">
+                        <img src="img/basket.png" alt="foto_basket" title="basket">
+                        <div class="basket_text">
+                            <span>WELCOME YOURNAME</span> <br><span>8 items</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!--====== navigation2 ========== -->
+                <div class="navigation2_flex">
+                    <nav class="navigation2" role="navigation">
+                        <ul>
+                            <li><a href="fabrique.html" target="_blank">HOME</a>
+                                <ul>
+                                    <li><a href="product.html" target="_blank" title="Claire Aitch">Claire Aitch Bath
+                                            Sheets</a></li>
+                                    <li><a href="goods.html" target="_blank" title="goods">Goods</a></li>
+                                    <li><a href="cart.html" target="_blank" title="Basket">Basket</a></li>
+                                    <li><a href="log_in.html" target="_blank" title="Log In">Log in</a></li>
+                                    <li><a href="register.html" target="_blank" title="Register">Register</a></li>
+                                    <li><a href="contact.html" target="_blank" title="Contact us">Contact us</a></li>
+                                </ul>
+
+
+                            </li>
+                            <li><a href="#" target="_blank">NEW IN</a></li>
+                            <li><a href="#" target="_blank">SALE</a></li>
+                            <li><a href="#" target="_blank">FLOORING</a></li>
+                            <li><a href="#" target="_blank">CURTAINS</a></li>
+                            <li><a href="#" target="_blank">BEDDING</a></li>
+                            <li><a href="contact.html" target="_blank">CONTACN US</a></li>
+                        </ul>
+
+                    </nav>
+                    <div class="button_search">
+                        <form class="search" action="http://fe.it-academy.by/TestForm.php">
+                            <input type="text" name="search" placeholder="Search..">
+                            <button type='submit'><img src='img/search.png'></button>
+                        </form>
+                    </div>
+                </div>
+
+
+            </header>
+        </div>
+
         <div class="container">
             <p> <a href="fabrique.html" class="home" title="HOME">Home</a> Claire Aitch Bath Sheets</p><br>
 
@@ -63,9 +127,9 @@
                     </div> <!-- /div look_preview_left-->
 
                     <div class="img_left">
+                        <img class="magnifier" src="img/glass.png" alt="magnifier_glass">
                         <img class="glass2" src="img/prodact1.jpeg" alt="photo of towels" title="towels">
-                        <img class="glass" src="img/glass.png" alt="magnifier_glass">
-                        <img src="img/prodact1.jpeg" alt="photo of towels" title="towels">
+                        <img class="glass3" src="img/prodact1.jpeg" alt="photo of towels" title="towels">
                     </div>
 
                     <div class="more_details">
@@ -106,36 +170,110 @@
                 <!-- =============== Look Preview right ==================== -->
                 <div class="look_preview_right">
                     <div class="make_like"> <span>YOU MAKE LIKE</span> <img src="img/offer.png" alt="icon_offer"></div>
-                    <div class="preview_right_item">
-                        <img class="preview_right_foto" src="img/prodact5.jpeg" alt="photo of towels" title="towels">
-                        <div>
-                            <p>Royale Curtains</p> <span> &pound; 159.99</span>
+
+                    <div class="adapt_product">
+                        <div class="preview_right_item">
+                            <img class="preview_right_foto" src="img/prodact5.jpeg" alt="photo of towels"
+                                title="towels">
+                            <div>
+                                <p>Royale Curtains</p> <span> &pound; 159.99</span>
+                            </div>
+                            <a href="product2.html">More details</a>
                         </div>
-                        <a href="product2.html">More details</a>
-                    </div>
-                    <div class="hr"></div>
-                    <div class="preview_right_item">
-                        <img class="preview_right_foto" src="img/prodact6.jpeg" alt="photo of towels" title="towels">
-                        <div>
-                            <p>Claire Aitch Zebra Rug</p><span> &pound; 129.99</span>
+                        <div class="hr"></div>
+                        <div class="preview_right_item">
+                            <img class="preview_right_foto" src="img/prodact6.jpeg" alt="photo of towels"
+                                title="towels">
+                            <div>
+                                <p>Claire Aitch Zebra Rug</p><span> &pound; 129.99</span>
+                            </div>
+                            <a href="product2.html">More details</a>
                         </div>
-                        <a href="product2.html">More details</a>
-                    </div>
-                    <div class="hr"></div>
-                    <div class="preview_right_item">
-                        <img class="preview_right_foto" src="img/prodact7.jpeg" alt="photo of towels" title="towels">
-                        <img class="discount" src="img/icon50.png" alt="discount50%" title="discount50%">
-                        <div>
-                            <p>Real Pine Wood Flooring </p><span>&pound; 119.99</span>
+                        <div class="hr"></div>
+                        <div class="preview_right_item">
+                            <img class="preview_right_foto" src="img/prodact7.jpeg" alt="photo of towels"
+                                title="towels">
+                            <img class="discount" src="img/icon50.png" alt="discount50%" title="discount50%">
+                            <div>
+                                <p>Real Pine Wood Flooring</p><span>&pound; 119.99</span>
+                            </div>
+                            <a href="product2.html">More details</a>
                         </div>
-                        <a href="product2.html">More details</a>
+                        <div class="hr"></div>
                     </div>
-                    <div class="hr"></div>
+
+
                 </div>
             </div> <!-- /div look_preview_main-->
 
             <div class="hr"></div>
         </div> <!-- /div container-->
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_flex">
+                    <div class="footer_info">
+                        <p>INFORMATION</p>
+                        <ul>
+                            <li><a href="contact.html" target="_blank" title="Log In">Contact Us</a></li>
+                            <li><a href="#" target="_blank" title="Delivery">Delivery</a></li>
+                            <li> <a href="#" target="_blank" title="Returns">Returns</a></li>
+                            <li> <a href="#" target="_blank" title="Terms">Terms and Conditions</a></li>
+                            <li> <a href="privacy.html" target="_blank" title="Privacy Policy">Privacy Policy</a></li>
+                            <li><a href="contact.html" target="_blank" title="About us"> About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_account">
+                        <p>YOUR ACCOUNT</p>
+                        <ul>
+                            <li><a href="log_in.html" target="_blank" title="Log In"> Log In</a></li>
+                            <li><a href="#" target="_blank" title="Create an Account">Create an Account</a></li>
+                            <li> <a href="#" target="_blank" title="Order History">Order History</a></li>
+                            <li> <a href="cart.html" target="_blank" title="Wish List">Wish List</a></li>
+                            <li> <a href="#" target="_blank" title="Cancel Account">Cancel Account</a></li>
+                            <li><a href="#" target="_blank" title="Newsletter Subscriptions"> Newsletter
+                                    Subscriptions</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_contacts">
+                        <p>CONTACTS</p>
+                        <div class="footer_contacts_adress">
+                            <span>Fabrique Fine Furnishing 308-310 Somewhere Road, Devon, PL9 1DD.</span><br><br>
+                            <span>Telephone: +44 01752 000000 <br>
+                                E-mail: <a href="contact.html" target="_blank" title="Contact">mail@yoursite.com</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="footer_delivery">
+                        <p>FREE DELIVERY!</p>
+                        <span>On all orders over £99.99</span><br><br>
+                        <span>Valid on all of our stocked item</span><br><br>
+                        <div class="paypal">
+                            <img src="img/paypal.png" alt="photo_paypal" title="paypal">
+                            <img src="img/visa.png" alt="photo_visa" title="visa">
+                            <img src="img/mastercard.png" alt="photo_mastercard" title="mastercard">
+                            <img src="img/discover.png" alt="photo_discover" title="discover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/div container-->
+            <!--=============== Footer_down ==================== -->
+            <div class="footer_down">
+                <div class="footer_down_logo">
+                    <p> Fabrique</p>
+                    <p>fine furnishings</p>
+                    <p>&#169; 2012 All Rights Reserved</p>
+                </div>
+                <div class="footer_down_social">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="img/facebook.png" alt="facebook"
+                            title="facebook"></a>
+                    <a href="https://twitter.com/?lang=ru" target="_blank"> <img src="img/twitter.png" alt="twitter"
+                            title="twitter"></a>
+                </div>
+            </div>
+
+        </footer>
 
     </div> <!-- /div wrapper-->
 
