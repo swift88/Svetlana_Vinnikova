@@ -222,7 +222,7 @@ form.cart_bottom_form{
             }
             img.discount {
                left: 15px;
-                top: 78px;
+                top: 87px;
             }
           
          .container .hr:last-of-type{
@@ -259,7 +259,8 @@ form.cart_bottom_form{
         width: 100%;
         height: auto;}
 
-
+        div.Error {
+            font-size: 61px;}
 
 
 
@@ -300,6 +301,9 @@ form.cart_bottom_form{
             div.new_products > p {
                font-size: 19px;
            }
+           img.discount {
+            top: 86px;
+        }
            .footer_info >p, .footer_account >p, .footer_contacts p {
             font-size: 18px;
             }
@@ -352,9 +356,7 @@ margin-bottom: 10px;}
 margin-right: 10px;
 margin-bottom: 10px;}
 
-img.discount {
-    top: 144px;
-}
+
         .look_preview_left {
            flex-wrap: wrap;}
 
@@ -429,6 +431,13 @@ img.discount {
 .register_right {
     width: 100%;}
 
+    .register_right,
+    div.Error {
+        text-align: center;}
+
+        div.Error {
+            font-size: 54px;}
+
     .look_preview_title {
          margin-bottom: 0px;}
 
@@ -444,10 +453,15 @@ img.discount {
 .how_register iframe {
     width: 480px;
 }
+/* =========== */
+ul.error {
+   justify-content: space-evenly;}
+
+  
+       
 
 
-
-        }
+}
 
 
 
@@ -468,6 +482,7 @@ img.discount {
             }
             .header_top div{
                 margin: 12px auto;
+                position: relative;
             }
             .header_top div.logo{
                 margin: 0 auto;
@@ -489,8 +504,8 @@ img.discount {
             .navigation2_flex {
                 display: none;
             }
-           
-             .burger{
+           /* ===Мобильная навигация-бургер======== */
+        .menu_icon{
             display: block;
         }
         .navigation1{
@@ -540,6 +555,10 @@ margin-bottom: 6px;}
 
     .new_products_buttons {
        margin-top: 5px;
+    }
+
+    .sale_on_button input.sale_button{
+width: 100%;
     }
     .footer_flex {
         text-align: center;}
@@ -680,6 +699,8 @@ button.update{
      .contact_left form textarea {
         height: 136px;
     }
+    div.Error {
+        margin: 0px 0px 20px;}
 
 
 

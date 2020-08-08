@@ -23,14 +23,16 @@ a{
     padding-top: 20px;
 }
 .container{
-    max-width: 1020px;
+   max-width: 1020px;
     margin: 15px auto;
     padding: 35px 39px;
     background-color: rgb(255 255 255 / 60%);
  }
 
 /* =============== Header ==================== */
-
+.header{
+overflow: hidden;
+}
 .header_top{
     display: flex;
     justify-content: space-between;
@@ -141,42 +143,98 @@ div.basket, div.basket_text{
    display: block;
   z-index: 1;
 }
-.burger{
+/* ====================Мобильная навигация=============== */
+/* .menu_icon{
     display: none;
     background: none;
     border: none;
     cursor: pointer;
     padding: 7px 2px;
-}
+} */
 
-.burger_item{
-    display: inline-block;
+.menu_icon{
+    z-index: 19;
     position: relative;
-    width: 25px;
-    height: 2px;
-    margin-top: 10px;
-    background-color: green;
-    
-    vertical-align: 5px;
-    margin-left: 16px;
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
-.burger_item::before,
-.burger_item::after{
-    content: "";
-    width: 100%;
-    height: 100%;
+.menu_icon_line{
+    position: relative;
+    width: 30px;
+    height: 5px;
     background-color: green;
+ }
+
+.menu_icon_line::before{
     position: absolute;
     left: 0;
-    z-index: 1;
+    top:-10px;
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: green;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
-.burger_item::before{
-    top: -6px;
-}
-.burger_item::after{
-    bottom: -6px;
+.menu_icon_line::after{
+    position: absolute;
+    left: 0;
+    top:10px;
+    content: "";
+    width: 30px;
+    height: 5px;
+    background-color: green;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
+.menu_icon.menu_icon_active .menu_icon_line{
+    background-color: transparent;
+}
+
+.menu_icon.menu_icon_active .menu_icon_line::before{
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+.menu_icon.menu_icon_active .menu_icon_line::after{
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/* ======= Мобильная навигация========== */
+.mobile_nav{
+    z-index: 9;
+    display: block;
+    position: absolute;
+    right: -320px;
+    top: 0;
+    padding: 50px;
+    /* bottom: 0; */
+    height: 100%;
+    width: 320px;
+    background-color: rgba(98, 224, 211, 0.589);
+    transition: transform 0.4s linear;
+}
+.mobile_nav_active{
+    transform: translateX(-100%);
+}
+
+
+.mobile_nav_title{
+    font-size: 17px;
+    margin-bottom: 20px;
+    color: red;
+}
+    ul.mobile_nav_list  li{
+   display: block;
+   border-right: none;
+   padding: 0px;
+}
 
 
 
