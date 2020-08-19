@@ -169,7 +169,7 @@ div.make_like img{
 }
 .preview_right_item a:hover{
     color:#0e5bcf;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 
@@ -376,7 +376,7 @@ ul.error li:last-of-type a::after{
 div.Error{
     margin: 20px;
     opacity:0.2;
-    color:#444343;
+    color:#979695;
     font-family: 'Raleway', sans-serif;
     font-size:72px;
 }

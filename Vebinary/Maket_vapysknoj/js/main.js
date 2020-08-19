@@ -1,4 +1,4 @@
-const menuToggle = document.querySelector('#menu_togle');
+const menuToggle = document.querySelector('#menu_toggle');
 const mobileNavContainer = document.querySelector('#mobile_nav');
 
 
